@@ -6,7 +6,6 @@ feature 'user creates product' do
     click_on 'New Product'
     fill_in 'Regular price', with: 1000
     fill_in 'Discount', with: 200
-    fill_in 'Sale price', with: 800
     click_on 'Create Product'
 
     expect(page).to have_content 'Product was successfully created.'
