@@ -6,7 +6,6 @@ feature 'user creates invoice' do
     click_on 'New Invoice'
     fill_in 'Subtotal', with: 1000
     fill_in 'Discount', with: 200
-    fill_in 'Total', with: 800
     click_on 'Create Invoice'
 
     expect(page).to have_content 'Invoice was successfully created.'
